@@ -1,0 +1,30 @@
+﻿@page "/"
+@inherits IndexBase
+
+<h1 class="page-title">Welcome to Bethany's Pie Shop HRM!</h1>
+<br />
+<h3>Using this application, you can manage our wonderful staff working for us all over the world, bringing people the best pies ever!</h3>
+
+<div>
+	<h2>One way binding</h2>
+	Employee First name <label>@Employee.FirstName</label>
+	Employee Last name <label>@Employee.LastName</label>
+</div>
+
+<div>
+	<h2>One way binding on Form controls</h2>
+	Employee First name <input value="@Employee.FirstName" />
+	Employee last name <input value="@Employee.LastName" />
+</div>
+
+<div>
+	<h2>Two way binding on Form controls</h2>
+	Employee First name <input @bind="@Employee.FirstName" @bind:event="oninput" />
+	Employee last name <input @bind="@Employee.LastName" @bind:event="oninput"/>
+</div>
+
+<div>
+	<button @onclick="Button_Click">Click me</button>
+
+	<input type="button" value="click!!!" @onclick="Button_Click"/>
+</div>
