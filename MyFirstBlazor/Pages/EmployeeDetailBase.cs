@@ -28,6 +28,6 @@ namespace MyFirstBlazor.Pages
 
         private List<JobCategory> JobCategories { get; set; }
 
-      
-	}
+        
+    }
 }
